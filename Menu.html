@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boba Bloom — Menu</title>
+
+    <link rel="icon" href="favicon.svg">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff0bd;
+            color: #40382d;
+        }
+
+        /* NAV */
+
+        header {
+            background: #ffcc72;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #e4a45f;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #40382d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c86d5a;
+        }
+
+        /* MAIN */
+
+        .page {
+            padding: 80px 8%;
+        }
+
+        .page h1 {
+            font-size: clamp(55px, 9vw, 100px);
+            line-height: .9;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            font-size: 19px;
+            line-height: 1.7;
+            max-width: 650px;
+            margin-bottom: 50px;
+        }
+
+        /* MENU */
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .drink {
+            background: #dfa270;
+            padding: 30px;
+            border-radius: 25px;
+            border: 3px solid #d09265;
+            min-height: 280px;
+        }
+
+        .drink-icon {
+            font-size: 65px;
+        }
+
+        .drink h2 {
+            font-size: 28px;
+            margin: 15px 0 10px;
+        }
+
+        .drink p {
+            line-height: 1.6;
+        }
+
+        .drink-bottom {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* SCOOP */
+
+        .special {
+            margin-top: 55px;
+            background: #b777e8;
+            color: white;
+            padding: 45px;
+            border-radius: 30px;
+        }
+
+        .special h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .special p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .special ul {
+            margin-left: 25px;
+            line-height: 2;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #45382d;
+            color: white;
+            padding: 40px 8%;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ffcc72;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .menu {
+                grid-template-columns: 1fr;
+            }
+
+            .drink-bottom {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <div class="logo">
+            🧋 Boba Bloom
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE -->
+
+    <main class="page">
+
+        <h1>
+            The Menu 🍓
+        </h1>
+
+        <p class="intro">
+            Pick a base, pick your toppings and prepare yourself
+            for an unnecessarily exciting drink.
+        </p>
+
+
+        <section class="menu">
+
+
+            <!-- DRINK 1 -->
+
+            <article class="drink">
+
+                <div class="drink-icon">
+                    🍓
+                </div>
+
+                <h2>
+                    Strawberry Pop
+                </h2>
+
+                <p>
+                    Fresh strawberry flavour with milk,
+                    ice and chewy tapioca pearls.
+                </p>
+
+                <div class="drink-bottom">
+
+                    <span>
+                        Sweet ★★★★☆
+                    </span>
+
+                    <span>
+                        £4.50
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- DRINK 2 -->
+
+            <article class="drink">
+
+                <div class="drink-icon">
+                    🥭
+                </div>
+
+                <h2>
+                    Mango Rush
+                </h2>
+
+                <p>
+                    Tropical mango tea with popping pearls
+                    and a fruity finish.
+                </p>
+
+                <div class="drink-bottom">
+
+                    <span>
+                        Sweet ★★★★★
+                    </span>
+
+                    <span>
+                        £4.75
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- DRINK 3 -->
+
+            <article class="drink">
+
+                <div class="drink-icon">
+                    🍵
+                </div>
+
+                <h2>
+                    Matcha Cloud
+                </h2>
+
+                <p>
+                    Smooth matcha combined with creamy milk
+                    and brown sugar pearls.
+                </p>
+
+                <div class="drink-bottom">
+
+                    <span>
+                        Sweet ★★★☆☆
+                    </span>
+
+                    <span>
+                        £5.00
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- DRINK 4 -->
+
+            <article class="drink">
+
+                <div class="drink-icon">
+                    🫐
+                </div>
+
+                <h2>
+                    Blueberry Bounce
+                </h2>
+
+                <p>
+                    Blueberry tea with popping boba
+                    and a slightly sour kick.
+                </p>
+
+                <div class="drink-bottom">
+
+                    <span>
+                        Sweet ★★★☆☆
+                    </span>
+
+                    <span>
+                        £4.60
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- SCOOP -->
+
+        <section class="special">
+
+            <h2>
+                🍦 The Scoop
+            </h2>
+
+            <p>
+                Our rules are simple:
+            </p>
+
+            <br>
+
+            <ul>
+
+                <li>
+                    Choose your drink.
+                </li>
+
+                <li>
+                    Choose your topping.
+                </li>
+
+                <li>
+                    Choose your sweetness.
+                </li>
+
+                <li>
+                    Enjoy your creation.
+                </li>
+
+            </ul>
+
+            <br>
+
+            <strong>
+                Featured scoop: Cookie Monster 👀
+            </strong>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Ismail ·
+
+            <a href="index.html">
+                Back home
+            </a>
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

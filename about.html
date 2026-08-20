@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boba Bloom — About</title>
+
+    <link rel="icon" href="favicon.svg">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff0bd;
+            color: #40382d;
+        }
+
+        /* NAVIGATION */
+
+        header {
+            background: #ffcc72;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #e4a45f;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #40382d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c86d5a;
+        }
+
+        /* PAGE */
+
+        main {
+            padding: 80px 8%;
+        }
+
+        .about {
+            max-width: 1000px;
+        }
+
+        h1 {
+            font-size: clamp(55px, 9vw, 100px);
+            line-height: .9;
+            margin-bottom: 30px;
+        }
+
+        .about > p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            max-width: 850px;
+        }
+
+        /* HIGHLIGHT */
+
+        .highlight {
+            background: #b777e8;
+            color: white;
+            padding: 40px;
+            border-radius: 30px;
+            margin: 45px 0;
+            font-size: 22px;
+        }
+
+        /* FACTS */
+
+        .facts-title {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .fact {
+            background: #dfa270;
+            padding: 30px;
+            border-radius: 22px;
+            border: 3px solid #d09265;
+        }
+
+        .fact h2 {
+            margin-bottom: 15px;
+        }
+
+        .fact p {
+            line-height: 1.6;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            margin-top: 60px;
+            background: #45382d;
+            color: white;
+            padding: 40px;
+            border-radius: 25px;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            line-height: 1.8;
+        }
+
+        .contact a {
+            color: #ffcc72;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #2e271f;
+            color: white;
+            padding: 35px 8%;
+        }
+
+        footer a {
+            color: #ffcc72;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .facts {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <div class="logo">
+            🧋 Boba Bloom
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ABOUT -->
+
+    <main>
+
+        <section class="about">
+
+            <h1>
+                Who are we?
+            </h1>
+
+
+            <p>
+                Boba Bloom started with one extremely important question:
+                <strong>why should drinks be boring?</strong>
+            </p>
+
+
+            <p>
+                We wanted to create a fictional bubble tea shop that
+                feels colourful, playful and a little bit chaotic.
+            </p>
+
+
+            <!-- HIGHLIGHT -->
+
+            <div class="highlight">
+
+                ✦ <strong>Our mission:</strong>
+
+                <br><br>
+
+                Make every drink feel like a tiny celebration.
+
+            </div>
+
+
+            <!-- FACTS -->
+
+            <h2 class="facts-title">
+                Three things we care about
+            </h2>
+
+
+            <div class="facts">
+
+
+                <div class="fact">
+
+                    <h2>
+                        01 — Fun
+                    </h2>
+
+                    <p>
+                        Drinks should be exciting,
+                        not just something you grab on the way home.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <h2>
+                        02 — Flavour
+                    </h2>
+
+                    <p>
+                        Sweet, fruity, creamy or refreshing —
+                        there is always something new to try.
+                    </p>
+
+                </div>
+
+
+                <div class="fact">
+
+                    <h2>
+                        03 — Creativity
+                    </h2>
+
+                    <p>
+                        Every part of Boba Bloom is designed
+                        to be colourful and completely original.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="contact">
+
+                <h2>
+                    Get in touch 📬
+                </h2>
+
+                <p>
+                    Got an idea for our next ridiculous flavour?
+                </p>
+
+                <br>
+
+                <p>
+                    
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 ismail ·
+
+            <a href="index.html">
+                Home
+            </a>
+
+            ·
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
